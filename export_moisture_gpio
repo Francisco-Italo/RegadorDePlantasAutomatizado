@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ ! -d /sys/class/gpio/gpio66 ]; then echo 66 > /sys/class/gpio/export; fi
+
+echo in > /sys/class/gpio/gpio66/direction
